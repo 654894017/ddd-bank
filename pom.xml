@@ -15,7 +15,7 @@
     </properties>
     <modules>
         <module>start</module>
-        <module>uc</module>
+        <module>user</module>
         <module>transaction</module>
     </modules>
     <packaging>pom</packaging>
@@ -36,7 +36,7 @@
             </dependency>
             <dependency>
                 <groupId>com.example</groupId>
-                <artifactId>uc</artifactId>
+                <artifactId>user</artifactId>
                 <type>pom</type>
                 <version>${dddbook.version}</version>
             </dependency>

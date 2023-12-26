@@ -3,14 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>uc</artifactId>
+        <artifactId>user</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>uc-infrastructure</artifactId>
+
+    <artifactId>user-types</artifactId>
     <packaging>jar</packaging>
 
-    <name>uc-infrastructure</name>
+    <name>uc-types</name>
     <url>http://maven.apache.org</url>
 
     <properties>
