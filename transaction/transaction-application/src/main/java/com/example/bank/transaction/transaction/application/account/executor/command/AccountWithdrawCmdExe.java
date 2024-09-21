@@ -1,5 +1,6 @@
 package com.example.bank.transaction.transaction.application.account.executor.command;
 
+import com.alibaba.cola.dto.SingleResponse;
 import com.example.bank.transaction.account.IAccountRepository;
 import com.example.bank.transaction.account.entity.Account;
 import com.example.bank.transaction.application.facade.account.dto.command.AccountWithdrawCmd;
@@ -10,7 +11,6 @@ import com.example.bank.transaction.transaction.entity.Transaction;
 import com.example.bank.transaction.types.AccountId;
 import com.example.bank.transaction.types.Currency;
 import com.example.bank.transaction.types.Money;
-import ddd.core.SingleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

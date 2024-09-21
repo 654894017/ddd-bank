@@ -1,6 +1,6 @@
 package com.example.bank.transaction.application.facade.account.dto.command;
 
-import ddd.core.Command;
+import com.alibaba.cola.dto.Command;
 import lombok.Data;
 
 import javax.validation.constraints.DecimalMin;

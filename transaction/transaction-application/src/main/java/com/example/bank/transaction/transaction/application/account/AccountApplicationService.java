@@ -1,5 +1,6 @@
 package com.example.bank.transaction.transaction.application.account;
 
+import com.alibaba.cola.dto.SingleResponse;
 import com.example.bank.transaction.application.facade.account.IAccountApplicationService;
 import com.example.bank.transaction.application.facade.account.dto.AccountDTO;
 import com.example.bank.transaction.application.facade.account.dto.command.AccountDepositCmd;
@@ -8,7 +9,6 @@ import com.example.bank.transaction.application.facade.account.dto.query.Account
 import com.example.bank.transaction.transaction.application.account.executor.command.AccountDepositCmdExe;
 import com.example.bank.transaction.transaction.application.account.executor.command.AccountWithdrawCmdExe;
 import com.example.bank.transaction.transaction.application.account.executor.query.AccountByAccountIdQryExe;
-import ddd.core.SingleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

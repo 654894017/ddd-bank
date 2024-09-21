@@ -1,5 +1,6 @@
 package com.example.bank.transaction.transaction.application.transaction.executor.command;
 
+import com.alibaba.cola.dto.SingleResponse;
 import com.example.bank.transaction.account.IAccountRepository;
 import com.example.bank.transaction.account.entity.Account;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.event.TransferTransactionSucceedEvent;
@@ -9,7 +10,6 @@ import com.example.bank.transaction.transaction.AccountTransferDomainService;
 import com.example.bank.transaction.transaction.ITrasactionRepository;
 import com.example.bank.transaction.transaction.entity.Transaction;
 import com.example.bank.transaction.types.*;
-import ddd.core.SingleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

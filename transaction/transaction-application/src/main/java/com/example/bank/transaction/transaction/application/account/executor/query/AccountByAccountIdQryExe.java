@@ -1,12 +1,12 @@
 package com.example.bank.transaction.transaction.application.account.executor.query;
 
+import com.alibaba.cola.dto.SingleResponse;
 import com.example.bank.transaction.account.IAccountRepository;
 import com.example.bank.transaction.account.entity.Account;
 import com.example.bank.transaction.application.facade.account.dto.AccountDTO;
 import com.example.bank.transaction.application.facade.account.dto.query.AccountByAccountIdQry;
 import com.example.bank.transaction.transaction.application.account.AccountAssembler;
 import com.example.bank.transaction.types.AccountId;
-import ddd.core.SingleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

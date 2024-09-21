@@ -1,8 +1,8 @@
 package com.example.bank.transaction.gateway;
 
 
-import ddd.core.Event;
+import com.alibaba.cola.dto.DTO;
 
 public interface IAccountMessageProducerGateway {
-    void send(Event event);
+    void send(DTO event);
 }

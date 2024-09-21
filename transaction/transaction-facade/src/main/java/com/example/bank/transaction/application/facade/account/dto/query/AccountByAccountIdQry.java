@@ -1,6 +1,6 @@
 package com.example.bank.transaction.application.facade.account.dto.query;
 
-import ddd.core.Query;
+import com.alibaba.cola.dto.Query;
 import lombok.Builder;
 import lombok.Data;
 

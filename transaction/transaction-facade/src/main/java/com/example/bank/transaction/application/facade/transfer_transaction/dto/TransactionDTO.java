@@ -1,6 +1,6 @@
 package com.example.bank.transaction.application.facade.transfer_transaction.dto;
 
-import ddd.core.DTO;
+import com.alibaba.cola.dto.DTO;
 import lombok.Data;
 
 import java.math.BigDecimal;

@@ -1,12 +1,12 @@
 package com.example.bank.transaction.account.web;
 
+import com.alibaba.cola.dto.PageResponse;
+import com.alibaba.cola.dto.SingleResponse;
 import com.example.bank.transaction.application.facade.transfer_transaction.ITransactionApplicationService;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.TransactionDTO;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.command.AccountTransferCmd;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.query.TransferTransactionPageQry;
 import com.example.bank.transaction.constant.API;
-import ddd.core.PageResponse;
-import ddd.core.SingleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +18,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(API.WEB_API_PATH + "transaction")
+@RequestMapping(API.WEB_API_PATH + "local_transaction")
 public class TransferTransactionController {
     private final ITransactionApplicationService transferApplicationService;
 

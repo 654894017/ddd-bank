@@ -1,6 +1,6 @@
 package com.example.bank.transaction.account.exception;
 
-import ddd.core.exception.BizException;
+import com.alibaba.cola.exception.BizException;
 
 /**
  * 超出日限额异常

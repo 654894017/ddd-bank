@@ -1,10 +1,10 @@
 package com.example.bank.transaction.transaction.application.transaction.executor.query;
 
+import com.alibaba.cola.dto.PageResponse;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.TransactionDTO;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.query.TransferTransactionPageQry;
 import com.example.bank.transaction.transaction.ITrasactionRepository;
 import com.example.bank.transaction.transaction.application.transaction.TransactionAssembler;
-import ddd.core.PageResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

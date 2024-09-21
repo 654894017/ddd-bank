@@ -29,5 +29,9 @@
             <artifactId>user</artifactId>
             <type>pom</type>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 </project>
