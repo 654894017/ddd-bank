@@ -4,7 +4,6 @@ package com.example.bank.transaction.types;
 public class Currency {
 
     private String value;
-
     public Currency(String value) {
         if (value == null || "".equals(value)) {
             throw new IllegalArgumentException("货币不能为空");

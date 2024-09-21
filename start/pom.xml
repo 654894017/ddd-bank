@@ -21,17 +21,19 @@
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>transaction</artifactId>
-            <type>pom</type>
+            <artifactId>transaction-adapter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>user</artifactId>
-            <type>pom</type>
+            <artifactId>transaction-infrastructure</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.example</groupId>
+            <artifactId>user-adapter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>user-infrastructure</artifactId>
         </dependency>
     </dependencies>
 </project>
