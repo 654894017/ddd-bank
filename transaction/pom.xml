@@ -15,13 +15,13 @@
         <module>transaction-domain</module>
         <module>transaction-infrastructure</module>
         <module>transaction-types</module>
-        <module>transaction-facade</module>
+        <module>transaction-client</module>
     </modules>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.example</groupId>
-                <artifactId>transaction-facade</artifactId>
+                <artifactId>transaction-client</artifactId>
                 <version>${dddbook.version}</version>
             </dependency>
             <dependency>

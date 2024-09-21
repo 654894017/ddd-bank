@@ -17,7 +17,7 @@
         <module>user-adapter</module>
         <module>user-application</module>
         <module>user-domain</module>
-        <module>user-facade</module>
+        <module>user-client</module>
         <module>user-types</module>
         <module>user-infrastructure</module>
     </modules>

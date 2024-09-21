@@ -14,24 +14,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.example</groupId>
             <artifactId>transaction-domain</artifactId>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>transaction-adapter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>transaction-application</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>transaction-facade</artifactId>
+            <artifactId>transaction-client</artifactId>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>

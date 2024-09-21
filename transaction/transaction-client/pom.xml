@@ -8,7 +8,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>transaction-facade</artifactId>
+    <artifactId>transaction-client</artifactId>
     <packaging>jar</packaging>
 
     <properties>

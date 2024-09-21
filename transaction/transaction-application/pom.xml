@@ -20,7 +20,11 @@
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>transaction-facade</artifactId>
+            <artifactId>transaction-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>transaction-infrastructure</artifactId>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
