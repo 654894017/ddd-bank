@@ -22,18 +22,22 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>transaction-adapter</artifactId>
+            <version>${dddbook.version}</version>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>transaction-infrastructure</artifactId>
+            <version>${dddbook.version}</version>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>user-adapter</artifactId>
+            <version>${dddbook.version}</version>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>user-infrastructure</artifactId>
+            <version>${dddbook.version}</version>
         </dependency>
     </dependencies>
 </project>
