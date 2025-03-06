@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.example</groupId>
         <artifactId>ddd-bank</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${dddbook.version}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>transaction</artifactId>

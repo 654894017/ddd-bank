@@ -5,6 +5,7 @@ import com.example.bank.transaction.account.exception.InsufficientFundsException
 import com.example.bank.transaction.account.exception.InvalidCurrencyException;
 import com.example.bank.transaction.types.*;
 import lombok.Data;
+import lombok.Getter;
 
 @Data
 public class Account {

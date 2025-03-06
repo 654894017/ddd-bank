@@ -6,7 +6,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>ddd-bank</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>${dddbook.version}</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,6 +17,7 @@
         <module>start</module>
         <module>user</module>
         <module>transaction</module>
+        <module>base</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -36,8 +37,57 @@
             </dependency>
             <dependency>
                 <groupId>com.example</groupId>
-                <artifactId>user</artifactId>
-                <type>pom</type>
+                <artifactId>user-adapter</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>user-types</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>user-domain</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>user-application</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>user-client</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>user-infrastructure</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>transaction-types</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>transaction-client</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>transaction-adapter</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>transaction-domain</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>transaction-infrastructure</artifactId>
                 <version>${dddbook.version}</version>
             </dependency>
             <dependency>
@@ -53,6 +103,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cola</groupId>
@@ -69,15 +120,41 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>3.6.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <version>1.1.0</version>
+                <configuration>
+                    <updatePomFile>true</updatePomFile>
+                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>flatten.clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

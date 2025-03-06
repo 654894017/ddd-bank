@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.example</groupId>
         <artifactId>user</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${dddbook.version}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -13,6 +13,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>transaction-client</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
