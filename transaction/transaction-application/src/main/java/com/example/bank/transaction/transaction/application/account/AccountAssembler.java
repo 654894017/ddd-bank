@@ -1,6 +1,6 @@
 package com.example.bank.transaction.transaction.application.account;
 
-import com.example.bank.transaction.account.entity.Account;
+import com.example.bank.transaction.account.model.Account;
 import com.example.bank.transaction.application.facade.account.dto.AccountDTO;
 import com.example.bank.transaction.application.facade.account.dto.command.AccountCreateCmd;
 import org.springframework.stereotype.Component;

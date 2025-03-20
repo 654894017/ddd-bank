@@ -10,8 +10,7 @@
     <artifactId>user-infrastructure</artifactId>
     <packaging>jar</packaging>
 
-    <name>uc-infrastructure</name>
-    <url>http://maven.apache.org</url>
+    <name>user-infrastructure</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

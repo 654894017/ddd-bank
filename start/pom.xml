@@ -40,5 +40,25 @@
             <artifactId>user-infrastructure</artifactId>
             <version>${dddbook.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-domain</artifactId>
+            <version>${dddbook.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-acl</artifactId>
+            <version>${dddbook.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-config</artifactId>
+            <version>${dddbook.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>base-commons</artifactId>
+            <version>${dddbook.version}</version>
+        </dependency>
     </dependencies>
 </project>

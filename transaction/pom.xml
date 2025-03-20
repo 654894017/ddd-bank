@@ -14,46 +14,7 @@
         <module>transaction-application</module>
         <module>transaction-domain</module>
         <module>transaction-infrastructure</module>
-        <module>transaction-types</module>
         <module>transaction-client</module>
     </modules>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction-client</artifactId>
-                <version>${dddbook.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction-adapter</artifactId>
-                <version>${dddbook.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction-application</artifactId>
-                <version>${dddbook.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction-infrastructure</artifactId>
-                <version>${dddbook.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction-start</artifactId>
-                <version>${dddbook.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction-types</artifactId>
-                <version>${dddbook.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction-domain</artifactId>
-                <version>${dddbook.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+
 </project>

@@ -1,7 +1,11 @@
 package com.example.bank.transaction.persistence.account;
 
-import com.example.bank.transaction.account.entity.Account;
-import com.example.bank.transaction.types.*;
+import com.example.bank.transaction.account.model.Account;
+import com.example.bank.transaction.account.model.AccountId;
+import com.example.bank.transaction.account.model.AccountNumber;
+import com.example.bank.transaction.account.model.UserId;
+import com.example.bank.transaction.types.Currency;
+import com.example.bank.transaction.types.Money;
 
 public class AccountFactory {
     public static Account toAccount(AccountDO accountDO) {

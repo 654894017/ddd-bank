@@ -10,7 +10,7 @@
     <artifactId>user-client</artifactId>
     <packaging>jar</packaging>
 
-    <name>uc-facade</name>
+    <name>user-client</name>
     <url>http://maven.apache.org</url>
 
     <properties>

@@ -1,8 +1,8 @@
 package com.example.bank.transaction.exchange_rate;
 
+import com.example.bank.transaction.account.model.ExchangeRate;
 import com.example.bank.transaction.gateway.IExchangeRateGateway;
 import com.example.bank.transaction.types.Currency;
-import com.example.bank.transaction.types.ExchangeRate;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

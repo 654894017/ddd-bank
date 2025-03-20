@@ -18,6 +18,7 @@
         <module>user</module>
         <module>transaction</module>
         <module>base</module>
+        <module>type</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -29,12 +30,6 @@
     </parent>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>transaction</artifactId>
-                <type>pom</type>
-                <version>${dddbook.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>user-adapter</artifactId>
@@ -77,6 +72,11 @@
             </dependency>
             <dependency>
                 <groupId>com.example</groupId>
+                <artifactId>transaction-application</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
                 <artifactId>transaction-adapter</artifactId>
                 <version>${dddbook.version}</version>
             </dependency>
@@ -91,11 +91,56 @@
                 <version>${dddbook.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>base-acl</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>base-domain</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>base-commons</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>base-config</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>type</artifactId>
+                <version>${dddbook.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.alibaba.cola</groupId>
                 <artifactId>cola-components-bom</artifactId>
                 <version>4.3.2</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>2.0.51</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>3.21.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-core</artifactId>
+                <version>1.8.6</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-annotation-aspectj</artifactId>
+                <version>1.8.6</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

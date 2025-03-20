@@ -11,7 +11,7 @@
     <artifactId>user-domain</artifactId>
     <packaging>jar</packaging>
 
-    <name>uc-domain</name>
+    <name>user-domain</name>
     <url>http://maven.apache.org</url>
 
     <properties>
