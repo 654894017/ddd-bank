@@ -1,4 +1,4 @@
-package com.example.bank.transaction.message;
+package com.example.bank.transaction.gateway.message;
 
 import com.alibaba.cola.dto.DTO;
 import com.example.bank.transaction.gateway.IAccountMessageProducerGateway;

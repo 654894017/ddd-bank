@@ -1,4 +1,4 @@
-package com.example.bank.transaction.repository;
+package com.example.bank.transaction.gateway.account;
 
 import com.example.bank.transaction.account.exception.AccountNotFoundException;
 import com.example.bank.transaction.account.model.Account;

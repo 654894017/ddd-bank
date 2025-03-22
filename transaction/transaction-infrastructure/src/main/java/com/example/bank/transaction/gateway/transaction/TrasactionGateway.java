@@ -1,11 +1,11 @@
-package com.example.bank.transaction.repository;
+package com.example.bank.transaction.gateway.transaction;
 
 import com.alibaba.cola.dto.PageResponse;
 import com.example.bank.transaction.account.model.TransactionId;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.TransactionDTO;
 import com.example.bank.transaction.application.facade.transfer_transaction.dto.query.TransferTransactionPageQry;
 import com.example.bank.transaction.gateway.ITrasactionGateway;
-import com.example.bank.transaction.transaction.entity.Transaction;
+import com.example.bank.transaction.transaction.model.Transaction;
 
 public class TrasactionGateway implements ITrasactionGateway {
     @Override

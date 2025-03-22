@@ -1,6 +1,9 @@
 package com.example.type;
 
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.math.BigDecimal;
 
 public class Money {
@@ -9,7 +12,8 @@ public class Money {
 
     private Currency currency;
 
-    public Money(BigDecimal amout, Currency currency) {
+    @JsonCreator
+    public Money(@JsonProperty("amout") BigDecimal amout, @JsonProperty("currency") Currency currency) {
 
         if (amout == null) {
             throw new IllegalArgumentException("金额不能为空");

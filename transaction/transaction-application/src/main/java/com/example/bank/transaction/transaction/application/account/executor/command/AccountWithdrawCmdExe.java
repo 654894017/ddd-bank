@@ -8,9 +8,10 @@ import com.example.bank.transaction.application.facade.account.dto.event.Account
 import com.example.bank.transaction.gateway.IAccountGateway;
 import com.example.bank.transaction.gateway.IAccountMessageProducerGateway;
 import com.example.bank.transaction.gateway.ITrasactionGateway;
-import com.example.bank.transaction.transaction.entity.Transaction;
-import com.example.bank.transaction.types.Currency;
-import com.example.bank.transaction.types.Money;
+import com.example.bank.transaction.transaction.model.Transaction;
+
+import com.example.type.Currency;
+import com.example.type.Money;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

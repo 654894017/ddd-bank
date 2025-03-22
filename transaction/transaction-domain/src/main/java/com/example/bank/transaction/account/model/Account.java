@@ -3,8 +3,8 @@ package com.example.bank.transaction.account.model;
 import com.example.bank.transaction.account.exception.DailyLimitExceededException;
 import com.example.bank.transaction.account.exception.InsufficientFundsException;
 import com.example.bank.transaction.account.exception.InvalidCurrencyException;
-import com.example.bank.transaction.types.Currency;
-import com.example.bank.transaction.types.Money;
+import com.example.type.Currency;
+import com.example.type.Money;
 import lombok.Data;
 
 @Data

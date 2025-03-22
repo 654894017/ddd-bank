@@ -1,4 +1,4 @@
-package com.example.bank.transaction.transaction.entity;
+package com.example.bank.transaction.transaction.model;
 
 public enum TransactionType {
     /**

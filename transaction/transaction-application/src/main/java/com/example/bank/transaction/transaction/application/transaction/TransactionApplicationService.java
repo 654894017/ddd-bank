@@ -19,8 +19,7 @@ public class TransactionApplicationService implements ITransactionApplicationSer
 
     @Override
     public SingleResponse<Boolean> transfer(AccountTransferCmd cmd) {
-        return transactionTransferCmdExe.transfer(cmd.getSourceUserId(),
-                cmd.getTargetAccountNumber(), cmd.getTargetAmount(), cmd.getTargetCurrency());
+        return transactionTransferCmdExe.transfer(cmd);
     }
 
     @Override

@@ -4,8 +4,9 @@ import com.example.bank.transaction.account.model.Account;
 import com.example.bank.transaction.account.model.AccountId;
 import com.example.bank.transaction.account.model.AccountNumber;
 import com.example.bank.transaction.account.model.UserId;
-import com.example.bank.transaction.types.Currency;
-import com.example.bank.transaction.types.Money;
+import com.example.type.Currency;
+import com.example.type.Money;
+
 
 public class AccountFactory {
     public static Account toAccount(AccountDO accountDO) {

@@ -22,6 +22,10 @@
             <groupId>com.example</groupId>
             <artifactId>transaction-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>type</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

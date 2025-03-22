@@ -1,7 +1,7 @@
-package com.example.bank.transaction.transaction.entity;
+package com.example.bank.transaction.transaction.model;
 
 import com.example.bank.transaction.account.model.AccountId;
-import com.example.bank.transaction.types.Money;
+import com.example.type.Money;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

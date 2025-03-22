@@ -13,11 +13,11 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class AccountByAccountIdQryExe {
-    private final IAccountGateway accountRepository;
+    private final IAccountGateway accountGateway;
     private final AccountAssembler accountAssembler;
 
     public SingleResponse<AccountDTO> get(AccountByAccountIdQry qry) {
-        Account account = accountRepository.find(new AccountId(qry.getAccountId()));
+        Account account = accountGateway.find(new AccountId(qry.getAccountId()));
         return SingleResponse.of(accountAssembler.to(account));
     }
 }

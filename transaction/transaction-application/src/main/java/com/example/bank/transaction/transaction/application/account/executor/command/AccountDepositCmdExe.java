@@ -8,9 +8,9 @@ import com.example.bank.transaction.application.facade.account.dto.event.Account
 import com.example.bank.transaction.gateway.IAccountGateway;
 import com.example.bank.transaction.gateway.IAccountMessageProducerGateway;
 import com.example.bank.transaction.gateway.ITrasactionGateway;
-import com.example.bank.transaction.transaction.entity.Transaction;
-import com.example.bank.transaction.types.Currency;
-import com.example.bank.transaction.types.Money;
+import com.example.bank.transaction.transaction.model.Transaction;
+import com.example.type.Currency;
+import com.example.type.Money;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class AccountDepositCmdExe {
     private final IAccountGateway accountRepository;
     private final IAccountMessageProducerGateway accountMessageProducerGateway;
-    private final ITrasactionGateway transferTrasactionRepository;
+    private final ITrasactionGateway transferTrasactionGateway;
 
     @Transactional(rollbackFor = Exception.class)
     public SingleResponse<Boolean> deposit(AccountDepositCmd cmd) {
@@ -33,7 +33,7 @@ public class AccountDepositCmdExe {
                 );
         accountRepository.save(account);
         // 记录交易记录
-        Long transferTransactionId = transferTrasactionRepository.save(transaction);
+        Long transferTransactionId = transferTrasactionGateway.save(transaction);
         // 发送消息用于审计日志、短信通知
         AccountDepositSucceedEvent event = new AccountDepositSucceedEvent(
                 transferTransactionId, account.getId().getValue(),

@@ -2,8 +2,8 @@ package com.example.bank.transaction.transaction;
 
 import com.example.bank.transaction.account.model.Account;
 import com.example.bank.transaction.account.model.ExchangeRate;
-import com.example.bank.transaction.transaction.entity.Transaction;
-import com.example.bank.transaction.types.Money;
+import com.example.bank.transaction.transaction.model.Transaction;
+import com.example.type.Money;
 import org.springframework.stereotype.Service;
 
 @Service

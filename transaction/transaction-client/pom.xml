@@ -21,9 +21,5 @@
             <artifactId>hibernate-validator</artifactId>
             <version>6.0.8.Final</version>
         </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>transaction-types</artifactId>
-        </dependency>
     </dependencies>
 </project>

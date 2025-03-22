@@ -1,7 +1,9 @@
 package com.example.bank.transaction.account.model;
 
-import com.example.bank.transaction.types.Currency;
-import com.example.bank.transaction.types.Money;
+
+
+import com.example.type.Currency;
+import com.example.type.Money;
 
 import java.math.BigDecimal;
 
