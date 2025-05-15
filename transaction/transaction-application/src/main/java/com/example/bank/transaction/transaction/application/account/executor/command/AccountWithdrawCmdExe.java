@@ -24,7 +24,7 @@ public class AccountWithdrawCmdExe {
     private final ITrasactionGateway transferTrasactionRepository;
 
     @Transactional(rollbackFor = Exception.class)
-    public SingleResponse<Boolean> withdraw(AccountWithdrawCmd cmd) {
+    public SingleResponse<Boolean> execute(AccountWithdrawCmd cmd) {
         Account account = accountRepository.find(new AccountId(cmd.getSourceUserId()));
         account.withdraw(new Money(cmd.getMoney(), new Currency(cmd.getCurrency())));
         Transaction transaction = new Transaction()
