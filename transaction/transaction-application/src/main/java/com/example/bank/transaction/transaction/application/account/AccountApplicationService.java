@@ -21,7 +21,7 @@ public class AccountApplicationService implements IAccountApplicationService {
 
     @Override
     public SingleResponse<Boolean> deposit(AccountDepositCmd cmd) {
-        return accountDepositCmdExe.deposit(cmd);
+        return accountDepositCmdExe.execute(cmd);
     }
 
     @Override

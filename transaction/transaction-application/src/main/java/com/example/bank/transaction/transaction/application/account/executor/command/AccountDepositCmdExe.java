@@ -23,7 +23,7 @@ public class AccountDepositCmdExe {
     private final ITrasactionGateway transferTrasactionGateway;
 
     @Transactional(rollbackFor = Exception.class)
-    public SingleResponse<Boolean> deposit(AccountDepositCmd cmd) {
+    public SingleResponse<Boolean> execute(AccountDepositCmd cmd) {
         Account account = accountRepository.find(new AccountId(cmd.getSourceUserId()));
         account.deposit(new Money(cmd.getMoney(), new Currency(cmd.getCurrency())));
         Transaction transaction = new Transaction()
