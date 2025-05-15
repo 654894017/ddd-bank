@@ -19,12 +19,12 @@ public class TransactionApplicationService implements ITransactionApplicationSer
 
     @Override
     public SingleResponse<Boolean> transfer(AccountTransferCmd cmd) {
-        return transactionTransferCmdExe.transfer(cmd);
+        return transactionTransferCmdExe.execute(cmd);
     }
 
     @Override
     public PageResponse<TransactionDTO> query(TransferTransactionPageQry qry) {
-        return transferTransactionPageQryExe.query(qry);
+        return transferTransactionPageQryExe.execute(qry);
     }
 
 }

@@ -21,16 +21,16 @@ public class AccountApplicationService implements IAccountApplicationService {
 
     @Override
     public SingleResponse<Boolean> deposit(AccountDepositCmd cmd) {
-        return accountDepositCmdExe.deposit(cmd);
+        return accountDepositCmdExe.execute(cmd);
     }
 
     @Override
     public SingleResponse<Boolean> withdraw(AccountWithdrawCmd cmd) {
-        return accountWithdrawCmdExe.withdraw(cmd);
+        return accountWithdrawCmdExe.execute(cmd);
     }
 
     @Override
     public SingleResponse<AccountDTO> get(AccountByAccountIdQry qry) {
-        return accountByAccountIdQryExe.get(qry);
+        return accountByAccountIdQryExe.execute(qry);
     }
 }

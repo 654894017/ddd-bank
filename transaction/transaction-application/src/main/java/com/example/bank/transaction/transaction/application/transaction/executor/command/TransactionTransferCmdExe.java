@@ -19,8 +19,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
-
 @Service
 @RequiredArgsConstructor
 public class TransactionTransferCmdExe {
@@ -31,7 +29,7 @@ public class TransactionTransferCmdExe {
     private final ITrasactionGateway transferTrasactionGateway;
 
     @Transactional(rollbackFor = Exception.class)
-    public SingleResponse<Boolean> transfer(AccountTransferCmd cmd) {
+    public SingleResponse<Boolean> execute(AccountTransferCmd cmd) {
         Money targetMoney = new Money(cmd.getTargetAmount(), new Currency(cmd.getTargetCurrency()));
 
         Account sourceAccount = accountRepository.find(new UserId(cmd.getSourceUserId()));

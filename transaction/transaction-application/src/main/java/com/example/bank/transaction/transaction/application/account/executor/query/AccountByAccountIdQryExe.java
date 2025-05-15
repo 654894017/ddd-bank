@@ -16,7 +16,7 @@ public class AccountByAccountIdQryExe {
     private final IAccountGateway accountGateway;
     private final AccountAssembler accountAssembler;
 
-    public SingleResponse<AccountDTO> get(AccountByAccountIdQry qry) {
+    public SingleResponse<AccountDTO> execute(AccountByAccountIdQry qry) {
         Account account = accountGateway.find(new AccountId(qry.getAccountId()));
         return SingleResponse.of(accountAssembler.to(account));
     }

@@ -14,7 +14,7 @@ public class TransferTransactionPageQryExe {
     private final ITrasactionGateway transactionRepository;
     private final TransactionAssembler transactionAssembler;
 
-    public PageResponse<TransactionDTO> query(TransferTransactionPageQry qry) {
+    public PageResponse<TransactionDTO> execute(TransferTransactionPageQry qry) {
         return transactionRepository.query(qry);
     }
 
